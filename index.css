@@ -1,10 +1,10 @@
-/* body{
+body{
 
     background-image: url("background-removed-Caesar-Cipher.png");
     background-color: #B7C5E1;
     background-repeat: no-repeat;
     background-position: center 4px;
-} */
+}
 
 #innerCirc {
     -webkit-animation: spin 1s linear; 
