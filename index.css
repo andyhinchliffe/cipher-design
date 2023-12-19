@@ -1,0 +1,20 @@
+body{
+
+    background-image: url("background-removed-Caesar-Cipher.png");
+    background-color: #B7C5E1;
+    background-repeat: no-repeat;
+    background-position: center 4px;
+}
+
+#innerCirc {
+    -webkit-animation: spin 1s linear; 
+    animation: none}
+    
+    
+  
+  /* for Safari browser  */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); 
+    }
+      
