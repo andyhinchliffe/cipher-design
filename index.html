@@ -4,45 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    
 </head>
-<body>
+<body class="text-xl">
+    <div class="bg-cover bg-no-repeat bg-center" style="background-color: #B7C5E1; background-position: center 4px;">
+        <img src="background-removed-caesar-cipher.png">
     <div id="container" class="mt-3 flex">
+       
         <img id="innerCirc" class="mt-24 ml-auto mr-auto"  src="smaller-circle.png" alt="">
-        
+        </div>
     </div>
-    <div class="flex mt-20">
-    <label for="words">Enter text and select radio button</label>
-    <input class="ml-auto mr-auto bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-44 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-7" id="input" type="text" name="words" placeholder="Enter Text">
+        <div class="flex flex-col mt-20 items-center">
+            <label  for="key" class="mb-1.5">Key</label>
+            <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-7 text-center" id="keyInput" type="number" name="key" placeholder="Enter Key">
+            <br>
+
+    <label for="words" class="mb-1.5">Enter text to be encoded/decoded</label>
+    <textarea class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 h-20 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="input" type="text" name="words" placeholder="Enter Text"></textarea>
     <br>
-<div class="flex">
+
     <input class = "w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" name="radio" type="radio" id="encode" onclick="cipherEncode()">
-    <label for="encode">Encode</label>
+    <label for="encode" class="mb-1.5">Encode</label>
     <input class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" name="radio" type="radio" id="decode" onclick="cipherDecode()">
-    <label for="decode">Decode</label>
+    <label for="decode" class="mb-1.5">Decode</label>
     <br>
-</div>
-<div class="flex">
-    <label  for="key">Key</label>
-    <input class="ml-auto mr-auto bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-44 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-7" id="keyInput" type="number" name="key" placeholder="Enter Key">
-   <br>
-    <label for="output:">Output:</label>
-    <textarea class=" ml-auto mr-auto bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-44 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-7" id="output"></textarea>
-</div>        
-    <button id="solveButton" class="ml-auto mr-auto">solve</button>
+   
+    <label for="output:" class="mb-1.5">Output:</label>
+    <textarea class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-20 w-1/2 mb-20" id="output" placeholder="Encoded/decoded message" readonly></textarea>
     </div>
-
+</div>
     
     
 
         
+   
     <script src="index.js"></script>
 </body>
 </html>
